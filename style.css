@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    opacity: 0.88;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('static/images/9259357.jpg');  /* Set background image */
+    background-size: cover;  /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background stay fixed while scrolling */
+}
+
+
+.game-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #ffcc00;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #222, #111);
+    box-shadow: 0 0 20px #ffcc00;
+}
+
+h1 {
+    color:  #f7f500;
+}
+#play-again-btn {
+    background-color: #28a745;
+    display: none;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.bot-message, .user-message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.bot-message {
+    background: #444;
+    color: #fff;
+}
+
+.user-message {
+    background: #ffcc00;
+    color: black;
+    text-align: right;
+}
+
+#user-input {
+    flex: 1;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ff5733;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#send-btn:hover {
+    background: #ff2200;
+}
+
+
+#hint-btn, #skip-btn {
+    background-color: #e8c94c; /* Solid color for hint button */
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.1s ease;
+    opacity: 1;
+}
+
+#skip-btn {
+    background-color: #ff5733;  /* Bright red for Skip */
+    color: white;
+    opacity: 3; 
+}
+
+#hint-btn:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+#skip-btn:hover {
+    background-color: #d4411e; /* Darker red on hover */
+}
+
+#hint-btn:active, #skip-btn:active {
+    transform: scale(0.75);
+}
+#score {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white; /* Make the text white */
+}
